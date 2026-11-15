@@ -1,0 +1,640 @@
+{
+  "clases": {
+    "Guerrero": {
+      "nombre_por_sexo": ["Guerrero", "Guerrera", "Guerrere"],
+      "requisitos": "",
+      "caracteristicaPrincipal": "Fuerza",
+      "dadosGolpe": "1d8",
+      "nivelMaximo": "Ninguno",
+      "habilidades": "Uso de cualquier arma y armadura",
+      "descripcion": "<p>Los guerreros, como su nombre indica, están exclusivamenteentrenados en el arte del combate y la guerra. Son especialistas en atacar por medios físicos. A diferencia de otras clases, los guerreros soportan una mayor carga en un grupo de aventureros, ya que son más resistentes y, por tanto, deben asumir la protección de los demás. Los guerreros pueden usar cualquier arma o armadura. Al alcanzar el nivel 15, el guerrero obtiene un segundo ataque por asalto, más otro adicional por cada 5 niveles extras, hasta un máximo de 4 ataques por asalto.</p><p><strong>Nivel 9:</strong> Al alcanzar el nivel 9, el guerrero se convierte en un gran líder y pasa a controlar un territorio y obtener una posición de autoridad en su sociedad. En caso de disponer de dinero, puede construir un castillo. Por último, también puede hacerse con el control de varios pueblos y ciudades, pero debe ser un líder fuerte y justo y proporcionarles protección.</p>",
+      "tiros_salvacion": {
+        "1,2,3": [15, 12, 14, 13, 16],
+        "4,5,6": [13, 10, 12, 11, 14],
+        "7,8,9": [9, 8, 10, 9, 12],
+        "10,11,12": [7, 6, 8, 7, 10],
+        "13,14,15": [5, 4, 6, 5, 8],
+        "16,17,18": [4, 4, 5, 4, 7],
+        "19": [4, 3, 4, 3, 6]
+      },
+		"nivel_experiencia": [
+      [0, 0],
+      [2035, 0],
+      [4065, 0],
+      [8125, 0],
+      [16251, 0],
+      [32501, 0],
+      [65001, 0],
+      [120001, 0],
+      [240001, 0],
+      [360001, 2],
+      [480001, 4],
+      [600001, 6],
+      [720001, 8],
+      [840001, 10],
+      [960001, 12],
+      [1080001, 14],
+      [1200001, 16],
+      [1320001, 18],
+      [1440001, 20],
+      [1560001, 22]
+    ]
+    },
+    "Clérigo": {
+      "nombre_por_sexo": ["Clérigo", "Clériga", "Clérigue"],
+      "requisitos": "",
+      "caracteristicaPrincipal": "Sabiduria",
+      "dadosGolpe": "1d6",
+      "nivelMaximo": "Ninguno",
+      "habilidades": "Expulsar muertos vivientes, lanzar conjuros",
+      "descripcion": "<p>Un humano que se convierte en clérigo ha jurado dedicar su vida al servicio de una deidad y regirá su existencia según los deseos y voluntad de su dios o diosa. Los clérigos pueden usar energía divina en forma de conjuros que se otorga a través del rezo y la adoración, y cuyo poder y cantidad están determinados por el nivel del personaje. Los clérigos también están entrenados para luchar; no son tanto pacíficos sacerdotes como guerreros en una cruzada santa. Un clérigo que caiga en desgracia, ya sea por violar las creencias de su dios o por romper sus votos, puede sufrir una penalización divina cuya naturaleza depende por entero del Amo del Laberinto, pero que podría ir desde una penalización de –1 al ataque hasta limitar los conjuros disponibles.</p><p>Los clérigos pueden usar cualquier tipo de armaduras y armas a excepción de las de filo cortante, porque su estricta doctrina sagrada les prohíbe usar armas cortantes o que empalen; esto incluye espadas, hachas y flechas, pero no hondas, mazas ni otras armas contundentes.</p><p><strong>Expulsión de muertos-vivientes:</strong> Los clérigos tienen el poder de <strong>Expulsar a los muertos-vivientes</strong>. La potencia de este don depende del nivel del clérigo, quien puede invocar el nombre y poder de su deidad para ahuyentar o incluso destruir muertos-vivientes. Los muertos-vivientes expulsados abandonan el área usando todos los recursos a su alcance y evitando dañar o tocar al clérigo.</p>",    
+      "tiros_salvacion": {
+        "1,2,3,4": [16, 11, 14, 12, 15],
+        "5,6,7,8": [14, 9, 12, 10, 12],
+        "9,10,11,12": [12, 7, 10, 8, 9],
+        "13,14,15,16": [8, 3, 8, 4, 6],
+        "17,18,19": [6, 2, 6, 4, 5]
+      },
+		"nivel_experiencia": [
+      [0, 0],
+      [1565, 0],
+      [3125, 0],
+      [6251, 0],
+      [12501, 0],
+      [25001, 0],
+      [50001, 0],
+      [100001, 0],
+      [200001, 0],
+      [300001, 1],
+      [400001, 2],
+      [500001, 3],
+      [600001, 4],
+      [700001, 5],
+      [800001, 6],
+      [900001, 7],
+      [1000001, 8],
+      [1100001, 9],
+      [1200001, 10],
+      [1300001, 11]
+    ],
+		"progresion_conjuros_clerigo": {
+    "1": [1, 0, 0, 0, 0],
+    "2": [2, 0, 0, 0, 0],
+    "3": [2, 1, 0, 0, 0],
+    "4": [3, 2, 0, 0, 0],
+    "5": [3, 3, 1, 0, 0],
+    "6": [3, 3, 2, 1, 0],
+    "7": [3, 3, 2, 2, 0],
+    "8": [4, 3, 3, 2, 1],
+    "9": [4, 4, 3, 2, 1],
+    "10": [4, 4, 3, 3, 2],
+    "11": [5, 4, 3, 3, 2],
+    "12": [5, 4, 4, 3, 2],
+    "13": [5, 4, 4, 4, 2],
+    "14": [5, 5, 4, 4, 3],
+    "15": [5, 5, 4, 4, 3]
+  }
+    },
+    "Elfo": {
+      "nombre_por_sexo": ["Elfo", "Elfa", "Elfe"],
+      "requisitos": "INT 9",
+      "caracteristicaPrincipal": "Fuerza e Inteligencia",
+      "dadosGolpe": "1d6",
+      "nivelMaximo": 10,
+      "habilidades": "Lanzar conjuros y luchar con armas",
+      "descripcion": "<p>Los elfos son seres feéricos esbeltos y de orejas puntiagudas. Al igual que los humanos, son muy diversos en apariencia y se dice que hay incluso más tipos de elfos en lugares lejanos. Suelen pesar unos 55 kilos y medir entre 1,50 y 1,70 metros. Aunque son un pueblo pacífico que disfruta del juego y los manjares livianos, también son guerreros y magos de gran talento. Pueden usar cualquier arma y armadura y lanzar conjuros como un mago.</p><p>Los elfos tienen infravisión hasta 18 metros, además de unos agudos ojos que les permiten ver (cuando buscan de manera activa) puertas secretas y ocultas con un resultado de 1-2 en 1d6. Debido a su vínculo con la naturaleza, los elfos son completamente inmunes a la parálisis de los necrófagos. Los elfos pueden hablar el idioma de su alineamiento además de común, elfo, gnoll, gran trasgo y orco.</p><p><strong>Nivel 9:</strong> Al alcanzar el nivel 9, un elfo puede establecer un baluarte en un entorno natural, como un bosque o un valle. En vez de imponerse sobre la naturaleza, este refugio se funde con ella de forma armoniosa. Debido a la conexión élfica con la naturaleza, todos los animales en un radio de 8 kilómetros del baluarte se muestran amables y serviciales con los elfos, lo que incluye avisarles de peligros, transmitir información o incluso enviar mensajes a otros en las cercanías. No obstante, y como contrapartida, el gobernante elfo debe defender siempre a los animales en su territorio. Los gobernantes elfos pueden contratar a miembros de otras razas como sirvientes o especialistas, pero solo pueden emplear soldados de linaje élfico.</p><p><strong>Progresión de conjuros del elfo</strong></p><p>Hasta nivel 10 los elfos tienen la misma progresión de conjuros que los magos. Consulta la tabla que aparece en la descripción de clase del mago.</p>",
+      "tiros_salvacion": {
+        "1,2,3": [15, 12, 13, 13, 15],
+        "4,5,6": [13, 10, 11, 11, 13],
+        "7,8,9": [9, 8, 9, 9, 11],
+        "10": [7, 6, 7, 7, 9]
+      },
+		"nivel_experiencia": [
+      [0, 0],
+      [4065, 0],
+      [8125, 0],
+      [16251, 0],
+      [32501, 0],
+      [65001, 0],
+      [130001, 0],
+      [200001, 0],
+      [400001, 0],
+      [600001, 2]
+    ],
+		"progresion_conjuros_mago_elfo": {
+    "1": [1, 0, 0, 0, 0],
+    "2": [2, 0, 0, 0, 0],
+    "3": [2, 1, 0, 0, 0],
+    "4": [3, 2, 0, 0, 0],
+    "5": [4, 2, 1, 0, 0],
+    "6": [4, 2, 2, 0, 0],
+    "7": [4, 3, 2, 1, 0],
+    "8": [4, 3, 2, 2, 0],
+    "9": [4, 3, 3, 2, 1],
+    "10": [4, 4, 3, 2, 2],
+    "11": [4, 4, 3, 3, 2],
+    "12": [4, 4, 4, 3, 2],
+    "13": [4, 4, 4, 3, 3],
+    "14": [4, 4, 4, 4, 3],
+    "15": [4, 4, 4, 4, 4]
+  }
+    },
+    "Enano": {
+      "nombre_por_sexo": ["Enano", "Enana", "Enane"],
+      "requisitos": "CON 9",
+      "caracteristicaPrincipal": "Fuerza",
+      "dadosGolpe": "1d8",
+      "nivelMaximo": 12,
+      "habilidades": "Uso de armaduras pesadas y combate subterráneo",
+      "descripcion": "<p>Los enanos tienen reputación de poseer un carácter hosco y ser especialmente ariscos con los elfos. Los enanos son semi-humanos robustos, bajos de estatura y con barba. Suelen medir alrededor de 1,25 metros y pesar unos 70 kilos. Son amantes de las piedras y metales preciosos y viven bajo el suelo. Su piel, pelo y ojos son (como podría esperarse) de colores terrosos. Debido a su corta estatura, los enanos no pueden usar espadas a dos manos ni arcos largos. Sin embargo, sí pueden usar cualquier otra arma o armadura.</p><p>Como suelen vivir en grandes minas bajo el suelo, los enanos tienen la capacidad de ver en la oscuridad hasta 18 metros con infravisión. Gracias a su experiencia con los terrenos subterráneos, los enanos tienen dos probabilidades entre seis (1-2 en 1d6) de detectar trampas, muros falsos, construcciones ocultas o percibir si un corredor está inclinado. El enano debe buscar de forma activa para que esta habilidad funcione.</p><p>Además de estas capacidades, los enanos son un pueblo especialmente duro con una fuerte resistencia a la magia, tal y como reflejan sus tiros de salvación. Un personaje enano habla la lengua común, la enana y la de su propio alineamiento. Debido a sus frecuentes encuentros con criaturas del subsuelo, también hablan trasgo, gnomo y kobold.</p> <p><strong>Nivel 9:</strong> Cuando un personaje enano alcanza el nivel 9 tiene la opción de crear un baluarte subterráneo que atrae enanos de todas partes. Los enanos suelen vivir en clanes, por lo que los del mismo clan que el personaje estarán inclinados a vivir bajo su techo, mientras que los de otros clanes se instalarán en las cercanías, aunque aceptando igualmente que el personaje los gobierne. Un gobernante enano puede contratar mercenarios y soldados enanos y solo emplea a miembros de otras razas para otras tareas, como humanos alquimistas o conjuradores elfos.</p>",
+      "tiros_salvacion": {
+        "1,2,3": [13, 8, 10, 9, 12],
+        "4,5,6": [10, 6, 8, 7, 10],
+        "7,8,9": [7, 4, 6, 5, 8],
+        "10": [4, 2, 4, 3, 6]
+      },
+		"nivel_experiencia": [
+      [0, 0],
+      [2187, 0],
+      [4375, 0],
+      [8751, 0],
+      [17501, 0],
+      [35001, 0],
+      [70001, 0],
+      [140001, 0],
+      [280001, 0],
+      [400001, 3],
+      [540001, 6],
+      [660001, 9]
+    ]
+    },
+    "Halfling": {
+      "nombre_por_sexo": ["Halfling", "Halfling", "Halfling"],
+      "requisitos": "DES 9, CON 9",
+      "caracteristicaPrincipal": "Fuerza y Destreza",
+      "dadosGolpe": "1d6",
+      "nivelMaximo": 8,
+      "habilidades": "Esquivar y moverse con sigilo",
+      "descripcion": "<p>Los halflings son aún más pequeños que los enanos, pesan cerca de 30 kilos y miden algo menos de 1 metro. Como los humanos, son de apariencia diversa, pero todos tienen pelo rizado y pies peludos. Los halflings son de naturaleza amigable y aman el tiempo libre y comer y beber bien. Cuando no están de aventuras, suelen entretenerse con cosas divertidas. Les encanta la comodidad y se gastan sus riquezas en los trastos más extravagantes.</p><p>Al igual que los enanos, los halflings pueden usar cualquier armadura y arma a excepción de las grandes o de dos manos.</p><p>Los halflings tienen un don para desaparecer cuando se encuentran al aire libre, equivalente a una habilidad del 90 % para esconderse entre arbustos y demás cobertura en el exterior. También pueden esconderse en las sombras o tras otro tipo de cobertura cuando se encuentran en laberintos o cuevas subterráneas, pero deben permanecer inmóviles y en silencio y sacar un 1-2 en 1d6. Son un pueblo diestro que obtiene un bono de +1 a las tiradas de iniciativa cuando están solos o en un grupo compuesto únicamente por halflings. Su gran coordinación también les proporciona un +1 a cualquier ataque con proyectiles. Debido a su pequeño tamaño, los halflings tienen un bono (–2) a su clase de armadura cuando los atacan criaturas más grandes que un hombre.</p><p><p><strong>Nivel 8:</strong> Cuando un halfling alcanza el nivel 8, puede construir un baluarte. El lugar elegido será un hermoso y tranquilo valle que atrae a colonos halflings desde grandes distancias. El personaje se convierte en el alguacil (el líder) de su gente y debe gobernarlos de manera justa y sabia.</p>",
+      "tiros_salvacion": {
+        "1,2,3": [13, 8, 10, 9, 12],
+        "4,5,6": [10, 6, 8, 7, 10],
+        "7,8,9": [7, 4, 6, 5, 8],
+        "10": [4, 2, 4, 3, 6]
+      },
+		"nivel_experiencia": [
+      [0, 0],
+      [2035, 0],
+      [4065, 0],
+      [8125, 0],
+      [16251, 0],
+      [32501, 0],
+      [65001, 0],
+      [130001, 0]
+    ]
+    },
+    "Ladrón": {
+      "nombre_por_sexo": ["Ladrón", "Ladrona", "Ladrone"],
+      "requisitos": "",
+      "caracteristicaPrincipal": "Destreza",
+      "dadosGolpe": "1d4",
+      "nivelMaximo": "Ninguno",
+      "habilidades": "Habilidades de sigilo, abrir cerraduras, desactivar trampas",
+      "descripcion": "<p>Los ladrones tienen un conjunto de habilidades únicas asociadas a su profesión, lo que los convierte en compañeros de aventuras muy útiles. Sin embargo, también pueden ser un poco sospechosos y no siempre son tan de fiar como otras clases. Normalmente el ladrón pertenece a un <strong>gremio de ladrones</strong> de su ciudad, donde puede hallar refugio e información entre aventuras. A criterio del Amo del Laberinto, puede que el ladrón deba entregar parte de su botín al gremio a cambio de protección.</p><p>Debido a su necesidad de moverse con libertad y sigilo, los ladrones no pueden llevar armaduras más pesadas que el cuero ni usar escudos. En cambio, sí necesitan usar diferentes tipos de armas, por lo que pueden usarlas de cualquier tipo. Un ladrón es experto en <strong>apuñalar por la espalda</strong>. Para ello debe moverse en silencio y esconderse en la sombra, evitando que su oponente se percate de su presencia. El ladrón recibe un bono de +4 a su ataque y multiplica todo el daño por 2.</p><p>Cada ladrón tiene el siguiente conjunto de habilidades, que van mejorando al subir de nivel (ver la tabla de habilidades de ladrón). Fíjate en que el encargado de tirar por estas habilidades es el Amo del Laberinto, ¡el ladrón no siempre es consciente de si ha fallado!</p><p>Habilidades adicionales</p><p>Un ladrón gana las siguientes habilidades a medida que sube de nivel:</p> <p><strong>Nivel 4</strong>: El ladrón puede leer idiomas (cualquiera) con un 80 % de probabilidades de éxito. Esta habilidad no incluye escrituras mágicas. Si la tirada no tiene éxito, el ladrón no puede intentar leer ese fragmento en particular hasta que suba de nivel.</p> <p><strong>Nivel 9</strong>: Cuando el ladrón alcanza el nivel 9 puede establecer una guarida de ladrones, en la que 2d6 aprendices de ladrón de nivel 1 se ponen a su servicio. Estos ladrones son de cierta confianza, pero si alguno es asesinado o arrestado, el personaje no puede atraer a más seguidores de ese tipo como reemplazo. Un personaje de éxito puede usar a estos seguidores para fundar su propio Gremio de Ladrones.</p> <p><strong>Nivel 10</strong>: El ladrón puede leer y lanzar conjuros de pergaminos de mago (y elfo) con un 90 % de precisión. Fallar la tirada significa que el conjuro no funciona como esperaba y produceun efecto horrible, a criterio del Amo del Laberinto.</p>",
+      "tiros_salvacion": {
+        "1,2,3,4": [16, 14, 13, 15, 14],
+        "5,6,7,8": [14, 12, 11, 13, 12],
+        "9,10,11,12": [12, 10, 9, 11, 10],
+        "13,14,15,16": [10, 8, 7, 9, 8],
+        "17": [8, 6, 5, 7, 6]
+      },
+		"nivel_experiencia": [
+      [0, 0],
+      [1251, 0],
+      [2501, 0],
+      [5001, 0],
+      [10001, 0],
+      [20001, 0],
+      [40001, 0],
+      [80001, 0],
+      [160001, 0],
+      [280001, 2],
+      [400001, 4],
+      [520001, 6],
+      [640001, 8],
+      [760001, 10],
+      [880001, 12],
+      [1000001, 14],
+      [1120001, 16],
+      [1240001, 18],
+      [1360001, 20],
+      [1480001, 22]
+    ],
+	"habilidades_ladron": {
+		"nombres": [
+		  "Abrir Cerraduras",
+		  "Encontrar Trampas",
+		  "Robar Bolsillos*",
+		  "Moverse en Silencio",
+		  "Trepar Paredes",
+		  "Esconderse en Sombras",
+		  "Escuchar Ruidos"
+		],
+		"valores_por_nivel": {
+		  "1": [ "10%", "15%", "20%", "25%", "87%", "10%", "1-2 (1d6)" ],
+		  "2": [ "15%", "20%", "25%", "30%", "88%", "15%", "1-2 (1d6)" ],
+		  "3": [ "20%", "25%", "30%", "35%", "89%", "20%", "1-3 (1d6)" ],
+		  "4": [ "25%", "30%", "35%", "40%", "90%", "25%", "1-3 (1d6)" ],
+		  "5": [ "30%", "35%", "40%", "45%", "91%", "30%", "1-3 (1d6)" ],
+		  "6": [ "35%", "40%", "45%", "50%", "92%", "35%", "1-3 (1d6)" ],
+		  "7": [ "40%", "45%", "50%", "55%", "93%", "40%", "1-4 (1d6)" ],
+		  "8": [ "45%", "50%", "55%", "60%", "94%", "45%", "1-4 (1d6)" ],
+		  "9": [ "50%", "55%", "60%", "65%", "95%", "50%", "1-4 (1d6)" ],
+		  "10": [ "55%", "60%", "65%", "70%", "96%", "55%", "1-4 (1d6)" ],
+		  "11": [ "60%", "65%", "70%", "75%", "97%", "60%", "1-4 (1d6)" ],
+		  "12": [ "65%", "70%", "75%", "80%", "98%", "65%", "1-5 (1d6)" ],
+		  "13": [ "70%", "75%", "80%", "85%", "99%", "70%", "1-5 (1d6)" ],
+		  "14": [ "75%", "80%", "85%", "90%", "99%", "75%", "1-5 (1d6)" ]
+		},
+		"aviso": "* –5 % por cada 5 niveles en que la víctima supere al ladrón. Aunque una habilidad supere el 100 %, siempre hay una probabilidad de fallo del 1 %."
+	}
+		
+		
+    },
+    "Mago": {
+      "nombre_por_sexo": ["Mago", "Maga", "Mague"],
+      "requisitos": "",
+      "caracteristicaPrincipal": "Inteligencia",
+      "dadosGolpe": "1d4",
+      "nivelMaximo": "Ninguno",
+      "habilidades": "Lanzamiento de conjuros arcanos",
+      "descripcion": "<p>Los magos, también llamados brujos o hechiceros, son estudiosos de los secretos arcanos capaces de lanzar conjuros. A medida que suben de nivel, los magos pueden usar una cantidad cada vez mayor de conjuros más poderosos. Sin embargo, a la hora de usar armas están limitados a las de menor tamaño (como, por ejemplo, una daga) y son incapaces de usar un escudo o llevar cualquier tipo de armadura. Debido a ello, los magos de nivel bajo son débiles y deben ser protegidos por el resto del grupo de aventureros.</p><p>El mago lleva consigo un libro de conjuros cuyas páginas contienen las fórmulas necesarias para realizar su magia. El libro puede contener una gran cantidad de conjuros, pero el mago solo puede memorizar una cantidad específica que podrá lanzar en cualquier momento. Esta cantidad aumenta a medida que el mago sube de nivel.</p> <p><strong>Nivel 9</strong>: Cuando el mago alcanza el nivel 9, adquiere la capacidad de crear conjuros y objetos mágicos. Estas reglas aparecen en el apartado de <strong>Investigación mágica</strong> (página L55).</p><p>Un mago puede construir un baluarte (a menudo una gran torre) cuando alcanza el nivel 11, lo que atrae a varios (1d6) aprendices de mago de niveles 1-3.</p>",
+      "tiros_salvacion": {
+        "1,2,3,4,5": [16, 13, 13, 13, 14],
+        "6,7,8,9,10": [14, 11, 11, 11, 12],
+        "11,12,13,14,15": [12, 9, 9, 9, 8],
+        "16,17,18": [8, 7, 6, 5, 6],
+        "19": [7, 6, 5, 4, 4]
+      },
+		"nivel_experiencia": [
+      [0, 0],
+      [2501, 0],
+      [5001, 0],
+      [10001, 0],
+      [20001, 0],
+      [40001, 0],
+      [80001, 0],
+      [160001, 0],
+      [310001, 0],
+      [460001, 1],
+      [610001, 2],
+      [760001, 3],
+      [910001, 4],
+      [1060001, 5],
+      [1210001, 6],
+      [1360001, 7],
+      [1510001, 8],
+      [1660001, 9],
+      [1810001, 10],
+      [1960001, 11]
+    ],
+		"progresion_conjuros_mago_elfo": {
+    "1": [1, 0, 0, 0, 0],
+    "2": [2, 0, 0, 0, 0],
+    "3": [2, 1, 0, 0, 0],
+    "4": [3, 2, 0, 0, 0],
+    "5": [4, 2, 1, 0, 0],
+    "6": [4, 2, 2, 0, 0],
+    "7": [4, 3, 2, 1, 0],
+    "8": [4, 3, 2, 2, 0],
+    "9": [4, 3, 3, 2, 1],
+    "10": [4, 4, 3, 2, 2],
+    "11": [4, 4, 3, 3, 2],
+    "12": [4, 4, 4, 3, 2],
+    "13": [4, 4, 4, 3, 3],
+    "14": [4, 4, 4, 4, 3],
+    "15": [4, 4, 4, 4, 4]
+  }
+    }
+  },
+	"Nombre_clase_y_sexo": {
+  "clérigo_macho": {
+    "nombre": ["Aldric", "Baldur", "Cedric", "Dorin", "Eldar", "Faram", "Galdric", "Haldrin", "Ithram", "Jorvik"],
+    "apodo": ["El Iluminado", "El Protector", "El Santo", "El Justo", "El Sabio", "El Devoto", "El Guardián", "El Puro", "El Venerado", "El Bendito"]
+  },
+  "clérigo_hembra": {
+    "nombre": ["Amara", "Brielle", "Carys", "Diana", "Elara", "Freya", "Gwyneth", "Helaine", "Ilara", "Janna"],
+    "apodo": ["La Piadosa", "La Sanadora", "La Misericordiosa", "La Fiel", "La Iluminada", "La Sabia", "La Guardiana", "La Justa", "La Devota", "La Benevolente"]
+  },
+  "clérigo_no_definido": {
+    "nombre": ["Aurel", "Beir", "Ciel", "Drith", "Ethir", "Farnel", "Gareth", "Havir", "Ithil", "Jorel"],
+    "apodo": ["Luz de la Fe", "Viento Neutral", "La Voz de los Cielos", "Viento Fiel", "Porta Protección", "Alma Pura", "Manos de Sanación", "Corazón Divino", "La Llama Eterna", "El Pilar Sagrado"]
+  },
+  "elfo_macho": {
+    "nombre": ["Aerandir", "Berethor", "Celeborn", "Dior", "Eldrin", "Faelivrin", "Galad", "Haldir", "Ithilion", "Luthar"],
+    "apodo": ["El Guardián del Bosque", "El Cazador Silencioso", "El Sabio de las Hojas", "El Cantor de la Noche", "El Eterno", "La Luz Perdida", "El Arco Dorado", "El Vigía del Norte", "El Andariego", "El Hijo del Amanecer"]
+  },
+  "elfo_hembra": {
+    "nombre": ["Aenor", "Brielle", "Caladwen", "Daenerys", "Elwing", "Faenor", "Galadriel", "Helanor", "Isilwen", "Luthien"],
+    "apodo": ["La Vidente del Crepúsculo", "La Doncella de las Estrellas", "La Luz del Bosque", "La Eterna", "La Voz del Mar", "La Guerrera Silente", "La Dama de Lórien", "La Flecha Veloz", "La Hoja de Plata", "La Canción del Amanecer"]
+  },
+  "elfo_no_definido": {
+    "nombre": ["Ailith", "Berith", "Cirin", "Eilion", "Faerith", "Gwaenor", "Irilith", "Loriel", "Nithal", "Valon"],
+    "apodo": ["Alma Eterna", "Eco de las Hojas", "Caza Celestial", "Noche Clara", "Destello Silente", " Corazón del Bosque", "Sombra Radiante", "Contempla Cielos", "Llama Oscura", "El Brillo Crepuscular"]
+  },
+  "enano_macho": {
+    "nombre": ["Balgrum", "Dwalin", "Durin", "Eredin", "Fundin", "Gimli", "Haldur", "Korin", "Lofur", "Thorin"],
+    "apodo": ["El Martillo de Hierro", "El Imparable", "El Sabio de la Montaña", "El Destructor", "El Leal", "El Fiero", "El Barba Roja", "El Guardián del Yunque", "El Escudo de Bronce", "El Señor de la Piedra"]
+  },
+  "enano_hembra": {
+    "nombre": ["Brynna", "Dagna", "Durga", "Eldra", "Freydis", "Grimna", "Helga", "Ingra", "Kara", "Lofina"],
+    "apodo": ["La Hija del Martillo", "La Forjadora de Acero", "La Escudera de Piedra", "La Justa", "La Valiente", "La Infatigable", "La Defensora", "La Martillera", "La Hija del Yunque", "La Escudera de Bronce"]
+  },
+  "enano_no_definido": {
+    "nombre": ["Agnor", "Belgrim", "Dulin", "Furin", "Gron", "Harvor", "Ithral", "Kronar", "Thrain", "Zorin"],
+    "apodo": ["El Pulso de la Roca", "La Fuerza de la Tierra", "Escudo Eterno", "Martillo Silencioso", "El Hierro Vivo", "Vigilante de las Minas", "Tormenta de Piedra", "Mirada Imperturbable", "Yunque", "Maza de la Caverna"]
+  },
+  "guerrero_macho": {
+    "nombre": ["Aragorn", "Boromir", "Caedmon", "Dorn", "Edrick", "Fenrir", "Gorath", "Haldor", "Ithor", "Jorik"],
+    "apodo": ["El Justo", "El Fuerte", "El Invicto", "El Vengador", "El Leal", "El Lobo Blanco", "El Destructor", "El Espada de Fuego", "El Guardián", "El Defensor"]
+  },
+  "guerrero_hembra": {
+    "nombre": ["Arwen", "Brienne", "Caledonia", "Dorna", "Eowyn", "Fiona", "Gwyn", "Helga", "Idril", "Jasra"],
+    "apodo": ["La Doncella de Batalla", "La Escudera", "La Valiente", "La Furiosa", "La Heroína", "La Impetuosa", "La Defensora", "La Espada de Plata", "La Guardiana del Amanecer", "La Escudo de Hierro"]
+  },
+  "guerrero_no_definido": {
+    "nombre": ["Andrin", "Borath", "Cindor", "Dornar", "Elrin", "Fenrith", "Gorathil", "Halthar", "Idrion", "Jorven"],
+    "apodo": ["Imparable", "Porta Tormentas", "Hoja de Fuego", "Llama de la Guerra", "Escudo Heroico", "Furia Blanca", "Ocaso de la Destrucción", "Espada Ígnea", "Amenaza del Crepúsculo", "Acero defensor"]
+  },
+  "halfling_macho": {
+    "nombre": ["Bilbo", "Frodo", "Meriadoc", "Peregrin", "Samwise", "Tobin", "Willow", "Yorin", "Zeb", "Dorian"],
+    "apodo": ["El Aventurero", "El Portador del Anillo", "El Valiente", "El Errante", "El Fiel", "El Alegre", "El Astuto", "El Alegre", "El Hábil", "El Intrépido"]
+  },
+  "halfling_hembra": {
+    "nombre": ["Elanor", "Holly", "Lobelia", "Primula", "Rosie", "Poppy", "Willow", "Daisy", "Marigold", "Hilda"],
+    "apodo": ["La Valiente", "La Guardiana del Bosque", "La Astuta", "La Aventurera", "La Jardinera", "La Alegre", "La Astuta", "La Intrépida", "La Viajera", "La Alegre"]
+  },
+  "halfling_no_definido": {
+    "nombre": ["Aerin", "Brith", "Cirin", "Dorith", "Erin", "Faelin", "Harin", "Lorion", "Nimbur", "Virin"],
+    "apodo": ["Buscalios", "Dedos largos", "Pies Ligeros", "Cinto Ancho", "Brizna Verde", "Ojo largo", "Siempre Alerta", "Vieaje Largo", "Camino perdido", "Hoja protectora"]
+  },
+  "ladrón_macho": {
+    "nombre": ["Garret", "Rogar", "Thorne", "Varn", "Korben", "Jorath", "Zorin", "Silas", "Merrick", "Eldon"],
+    "apodo": ["El Silencioso", "El Astuto", "El Sombrío", "El Ojo Rápido", "El Escurridizo", "El Zorro", "El Furtivo", "El Sigiloso", "El Ladrón de Sombras", "El Intrépido"]
+  },
+  "ladrón_hembra": {
+    "nombre": ["Selene", "Nadia", "Rhiannon", "Vira", "Kara", "Mira", "Elara", "Nyssa", "Alys", "Thalia"],
+    "apodo": ["La Ladrona de la Noche", "La Astuta", "La Silenciosa", "La Sombría", "La Escurridiza", "La Furtiva", "La Zorra", "La Sigilosa", "La Ojo Rápido", "La Intrépida"]
+  },
+  "ladrón_no_definido": {
+    "nombre": ["Sorin", "Dorin", "Merith", "Vorin", "Korin", "Nirin", "Eldrin", "Aerin", "Tarin", "Zorin"],
+    "apodo": ["Hoja Mortal", "Rompe Candados", "Sombra Larga", "Ojo Rápido", "Mirada Escurridiza", "Dedos Largos", "Bolsa Vacía", "Poca Gracia", "Manos Largas", "Sombra Oscura"]
+  },
+  "mago_macho": {
+    "nombre": ["Althar", "Berion", "Cerith", "Dareth", "Erith", "Falon", "Galath", "Helion", "Ithar", "Jorin"],
+    "apodo": ["El Sabio", "El Hechicero", "El Conjurador", "El Tejedor de Magia", "El Vidente", "El Guardián del Conocimiento", "El Maestro de los Elementos", "El Portador de Luz", "El Arcanista", "El Archimago"]
+  },
+  "mago_hembra": {
+    "nombre": ["Althea", "Briana", "Celene", "Daria", "Elaine", "Fiona", "Gwendolyn", "Helena", "Isolde", "Jorina"],
+    "apodo": ["La Sabia", "La Hechicera", "La Conjuradora", "La Tejedora de Magia", "La Vidente", "La Guardiana del Conocimiento", "La Maestra de los Elementos", "La Portadora de Luz", "La Arcanista", "La Archimaga"]
+  },
+  "mago_no_definido": {
+    "nombre": ["Althar", "Berion", "Cerith", "Dareth", "Erith", "Falon", "Galath", "Helion", "Ithar", "Jorin"],
+    "apodo": ["Consulta Libros", "Conocimiento Salvaje", "Runa Antigua", "Bastón Curvo", "Collar Vidente", "Conocimiento Verde", "Controla Elementos", "Crea Luz", "Consulta Arcana", "Crea Oscuridad"]
+  }
+},	
+	"alineamientos": [
+    { "tipo": "Ley", "descripcion": "Los seres legales creen en la verdad y la justicia, y siguen las leyes." },
+    { "tipo": "Neutralidad", "descripcion": "Los seres neutrales actúan por su propio interés." },
+    { "tipo": "Caos", "descripcion": "Los seres caóticos actúan en contra de la ley y promueven el desorden." }
+  ],
+	 "modificadores": {
+    "atributos_orden": ["fuerza", "constitucion", "destreza", "inteligencia", "sabiduria", "carisma_reaccion", "carisma_servidores", "carisma_moral"],
+    "3": ["-3", "-3", "+3", "0", "-3", "+2", "1", "4"],
+    "4": ["-2", "-2", "+2", "0", "-2", "+1", "2", "5"],
+    "5": ["-2", "-2", "+2", "0", "-2", "+1", "2", "5"],
+    "6": ["-1", "-1", "+1", "0", "-1", "+1", "3", "6"],
+    "7": ["-1", "-1", "+1", "0", "-1", "+1", "3", "6"],
+    "8": ["-1", "-1", "+1", "0", "-1", "+1", "3", "6"],
+    "9": ["0", "0", "0", "0", "0", "0", "4", "7"],
+    "10": ["0", "0", "0", "0", "0", "0", "4", "7"],
+    "11": ["0", "0", "0", "0", "0", "0", "4", "7"],
+    "12": ["0", "0", "0", "0", "0", "0", "4", "7"],
+    "13": ["+1", "+1", "-1", "+1", "+1", "-1", "5", "8"],
+    "14": ["+1", "+1", "-1", "+1", "+1", "-1", "5", "8"],
+    "15": ["+1", "+1", "-1", "+1", "+1", "-1", "5", "8"],
+    "16": ["+2", "+2", "-2", "+2", "+2", "-1", "6", "9"],
+    "17": ["+2", "+2", "-2", "+2", "+2", "-1", "6", "9"],
+    "18": ["+3", "+3", "-3", "+3", "+3", "-2", "7", "10"]
+  },
+  "tiros_salvacion_orden": ["arma_aliento", "veneno_muerte", "petrificacion_paralisis", "varita", "conjuro_baston_cetro"],
+	"ajuste_experiencia": {
+    "ajuste_orden": ["puntos_caracteristica", "ajuste"],
+    "valores": {
+      "[3, 4, 5]": "-10%",
+      "[6, 7, 8]": "-5%",
+      "[9, 10, 11, 12]": "0%",
+      "[13, 14, 15]": "+5%",
+      "[16, 17, 18]": "+10%"
+    }
+  },
+  "conjuros_clerigo": {
+    "nivel_1": [
+      "Curación de Heridas Leves",
+      "Detección de Magia",
+      "Detección del Mal",
+      "Luz",
+      "Protección contra el Mal",
+      "Purificación del Agua y de los Alimentos",
+      "Quitar el Miedo",
+      "Resistencia al Frío"
+    ],
+    "nivel_2": [
+      "Bendición",
+      "Conocer Alineamiento",
+      "Descubrir Trampas",
+      "Encantamiento de Serpientes",
+      "Hablar con los Animales",
+      "Retener Personas",
+      "Silencio en un radio de 5 m"
+    ],
+    "nivel_3": [
+      "Crecimiento Animal",
+      "Curar Ceguera",
+      "Curar Enfermedad",
+      "Extirpar Maldición",
+      "Localizar Objeto",
+      "Luz Eterna",
+      "Resistencia al Fuego"
+    ],
+    "nivel_4": [
+      "Bajar Agua",
+      "Curación de Heridas Graves",
+      "Desvanecimiento de la Magia",
+      "Hablar con las Plantas",
+      "Neutralizar Veneno",
+      "Palos a Serpientes",
+      "Protección contra el Mal en un radio de 3 m"
+    ],
+    "nivel_5": [
+      "Alzar a los Muertos",
+      "Crear Comida y Bebida",
+      "Curación de Heridas Críticas",
+      "Descarga Flamígera",
+      "Golpear",
+      "Plaga de Insectos",
+      "Ver Realmente"
+    ],
+    "nivel_6": [
+      "Abrir las Aguas",
+      "Animar Objetos",
+      "Búsqueda",
+      "Comunión",
+      "Invocar Animales",
+      "Orden de Retirada",
+      "Relato de Piedra"
+    ],
+    "nivel_7": [
+      "Caminar por el Viento",
+      "Controlar el Clima",
+      "Palabra Sagrada",
+      "Reanimar a los Muertos",
+      "Regenerar",
+      "Restaurar",
+      "Símbolo",
+      "Terremoto"
+    ]
+  },
+  "conjuros_mago_elfo": {
+    "nivel_1": [
+      "Bloqueo de Entradas",
+      "Detección de Magia",
+      "Disco Flotante",
+      "Encantamiento de Personas",
+      "Escudo",
+      "Fuerza Fantasmagórica",
+      "Lectura de Idiomas",
+      "Lectura de Magia",
+      "Luz",
+      "Protección contra el Mal",
+      "Proyectil Mágico",
+      "Sueño",
+      "Ventriloquía"
+    ],
+    "nivel_2": [
+      "Apertura",
+      "Cerradura Mágica",
+      "Detección de lo Invisible",
+      "Detección del Mal",
+      "Golpe de Rayo",
+      "Imagen Espejo",
+      "Invisibilidad",
+      "Levitación",
+      "Localizar Objeto",
+      "Luz Eterna",
+      "Retener Personas",
+      "Telaraña"
+    ],
+    "nivel_3": [
+      "Apresuramiento",
+      "Bola de Fuego",
+      "Clarividencia",
+      "Desvanecimiento de la Magia",
+      "Extirpar Maldición",
+      "Infravisión",
+      "Invisibilidad, radio 3 m",
+      "Protección contra Proyectiles Normales",
+      "Respirar Agua",
+      "Vuelo"
+    ],
+    "nivel_4": [
+      "Confusión",
+      "Crecimiento Vegetal",
+      "Encantamiento de Monstruos",
+      "Invocar Elemental",
+      "Masamorfismo",
+      "Muro de Fuego",
+      "Muro de Hielo",
+      "Ojo de Hechicero",
+      "Polimorfizar a Otro",
+      "Polimorfizarse a Sí Mismo",
+      "Puerta Dimensional",
+      "Terreno Alucinatorio"
+    ],
+    "nivel_5": [
+      "Cono de Frío",
+      "Contactar con el Otro Plano",
+      "Imbecilidad",
+      "Invocar Elemental",
+      "Muro de Piedra",
+      "Nube Letal",
+      "Paso en Muro",
+      "Reanimar a los Muertos",
+      "Retener Monstruos",
+      "Receptáculo Mágico",
+      "Teleportación",
+      "Telequinesis",
+      "Transmutar Roca en Lodo"
+    ],
+    "nivel_6": [
+      "Abrir las Aguas",
+      "Acechador Invisible",
+      "Bajar Agua",
+      "Concha Antimagia",
+      "Conjuro de Muerte",
+      "Controlar el Clima",
+      "Desintegrar",
+      "Geas",
+      "Mover Tierras",
+      "Piedra a Carne",
+      "Proyectar Imagen",
+      "Reencarnar"
+    ],
+    "nivel_7": [
+      "Bola de Fuego de Estallido Retardado",
+      "Deseo Limitado",
+      "Dos Dimensiones",
+      "Espada Mágica",
+      "Estatua",
+      "Invertir Gravedad",
+      "Invisibilidad de Masas",
+      "Llamada Instantánea",
+      "Mano Aferrante",
+      "Palabra Poderosa, Aturdir",
+      "Puerta en Fase",
+      "Simulacro"
+    ],
+    "nivel_8": [
+      "Antipatía / Simpatía",
+      "Atrapar el Alma",
+      "Clon",
+      "Cristalacero",
+      "Encantamiento de Masas",
+      "Irresistible Danza",
+      "Laberinto",
+      "Mente en Blanco",
+      "Nube Incendiaria",
+      "Polimorfizar Cualquier Objeto",
+      "Puño Cerrado",
+      "Símbolo"
+    ],
+    "nivel_9": [
+      "Aprisionamiento",
+      "Cambiar de Forma",
+      "Deseo",
+      "Detener el Tiempo",
+      "Enjambre de Meteoros",
+      "Esfera Prismática",
+      "Éxtasis Temporal",
+      "Mano Trituradora",
+      "Palabra Poderosa, Matar",
+      "Reencarnar",
+      "Simulacro"
+    ]
+  },
+	"conversion_dinero": {
+    "monedas": ["Cobre", "Plata", "Electrum", "Oro", "Platino"],
+    "equivalencias_por_1_mo": [100, 10, 2, 1, 0.1]
+  }
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Personajes - Labyrinth Lord</title>
+    <link rel="stylesheet" href="public/style.css">
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+	</style>
+</head>
+<body>
+	<div id="cabecera">
+    <h1><span style="font-size: 1.5em;">Generador de Personajes - Labyrinth Lord.</span> Más en <a href="https://anotacionesrol.blogspot.com/" style="color: aliceblue;">Anotaciones de rol</a> </br> 
+	
+<select id="nivel-select" class="form-element">
+    <option value="cualquiera">Todos los niveles</option>
+    <option value="1">Nivel 1</option>
+    <option value="2">Nivel 2</option>
+    <option value="3">Nivel 3</option>
+    <option value="4">Nivel 4</option>
+    <option value="5">Nivel 5</option>
+    <option value="6">Nivel 6</option>
+    <option value="7">Nivel 7</option>
+    <option value="8">Nivel 8</option>
+    <option value="9">Nivel 9</option>
+    <option value="10">Nivel 10</option>
+</select>
+
+<select id="clase-select" class="form-element">
+    <option value="cualquiera">Todas las clases</option>
+    <option value="Guerrero">Guerrero</option>
+    <option value="Clérigo">Clérigo</option>
+    <option value="Elfo">Elfo</option>
+    <option value="Enano">Enano</option>
+    <option value="Halfling">Halfling</option>
+    <option value="Ladrón">Ladrón</option>
+    <option value="Mago">Mago</option>
+</select>
+<button id="generarPersonaje">Generar Personaje</button>
+		
+<button id="imprimir-pdf" class="form-element">PDF</button>
+		</h1></div>
+	<div id="cuerpo">
+
+    <div id="resultado">Esperando</div>
+    </div>
+<div id="pie">© 2007-2016, Daniel Proctor • © 2016 Nosolorol Ediciones • Labyrinth Lord, Advanced Labyrinth Lord, Goblinoid Games y Mutant Future son marcas registradas de Daniel Proctor • Este producto está publicado bajo los términos de la licencia OGL.
+Publicado por Nosolorol S.L. C/ Ocaña 32, 28047 Madrid.  <a href="https://www.nosolorol.com/es/111-labyrinth-lord">www.nosolorol.com</a> </div>
+    <!-- Solo un archivo app.js que importa los módulos -->
+    <script src="./src/app.js" type="module"></script>
+</body>
+</html>

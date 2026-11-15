@@ -1,0 +1,150 @@
+.crimson-text-regular {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.crimson-text-semibold {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.crimson-text-bold {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.crimson-text-regular-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.crimson-text-semibold-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.crimson-text-bold-italic {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+    font-family: "Crimson Text", serif;
+	  font-weight: 400;
+	  font-style: normal;
+    background-color: #210006;
+    margin: 0;
+    padding: 0;
+	font-size: 1em;
+    line-height: 1em;
+}
+#cabecera {}
+#cuerpo {}
+#pie {
+	background: #000;
+    text-align: center;
+    padding: 20px 100px;
+    color: #939393;
+    font-size: 0.7em;
+    line-height: 1.5em;
+}
+ 
+h1 {
+    text-align: center;
+    background-color: #021e04;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 1em;
+}
+
+button, select {
+  
+    margin: 10px 10px;
+    padding: 10px 10px;
+    background-color: #801226;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #610818;
+}
+
+#resultado {
+	font-size: 1.3em;
+    line-height: 1.4em;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px 100px;
+    background-color: #F9F4F8;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background-image: url('/desarrollo/labyrinth-lord-generator/public/img/fondo-hojapj.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+	background-position: top;
+}
+
+#resultado p {
+	text-align: justify;
+   
+}
+
+#resultado h2 {
+    ext-align: center;
+    color: #2d3e50;
+    font-size: 2em;
+    margin: 40px 20px;
+}
+
+#retrato {
+	width: 50%;
+    float: left;
+    padding-right: 30px;}
+
+.contenedor {display:inline-block}
+#resultado .contenedor p{text-align: left;
+    line-height: 0.9em;}
+.tresCuartos {width: 60%;float: left;}
+.unCuarto {float: right;width: 38%;}
+
+@media print {
+    /* Solo muestra el área del personaje y oculta el resto */∫
+    body * {
+        
+				background-image: url('/public/img/HojaPJ-SinFondo.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                -webkit-print-color-adjust: exact;
+    }
+    
+    #resultado, #resultado * {
+        visibility: visible;  /* Muestra solo la parte del personaje */
+    }
+	
+	
+    
+    #resultado {
+        top: 0;
+		position: absolute;
+        width: 90%;
+		max-width: 100%;
+		box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+		margin: 0px auto 100px auto;
+    	padding: 0 50px;
+    }
+	
+	
+}
+
+
